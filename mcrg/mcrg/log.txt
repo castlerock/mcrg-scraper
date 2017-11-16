@@ -1,0 +1,59 @@
+INFO: Scrapy 1.3.3 started (bot: mcrg)
+INFO: Overridden settings: {'BOT_NAME': 'mcrg', 'CONCURRENT_REQUESTS': 1, 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'CONCURRENT_REQUESTS_PER_IP': 1, 'DOWNLOAD_DELAY': 5, 'NEWSPIDER_MODULE': 'mcrg.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['mcrg.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'}
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+WARNING: C:\Users\Mukesh\dev-mcrg-scraper\mcrg\mcrg\pipelines.py:7: ScrapyDeprecationWarning: Importing from scrapy.xlib.pydispatch is deprecated and will no longer be supported in future Scrapy versions. If you just want to connect signals use the from_crawler class method, otherwise import pydispatch directly if needed. See: https://github.com/scrapy/scrapy/issues/1762
+  from scrapy.xlib.pydispatch import dispatcher
+
+INFO: Enabled item pipelines:
+['mcrg.pipelines.MySQLStorePipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Spider opened id: 7
+INFO: Spider opened name: oddsportal_daily
+DEBUG: Telnet console listening on 127.0.0.1:6024
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/africa/cosafa-cup/results/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/australia/a-league/results/> (referer: http://www.oddsportal.com/soccer/africa/cosafa-cup/results/)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/zimbabwe/premier-soccer-league/results/> (referer: http://www.oddsportal.com/soccer/africa/cosafa-cup/results/)
+DEBUG: Crawled (404) <GET http://fb.oddsportal.com/robots.txt> (referer: None)
+DEBUG: Crawled (200) <GET http://fb.oddsportal.com/ajax-sport-country-tournament-archive/1/l8eyJEnG/X0/1/5.5/1/?_=15010725239053> (referer: http://www.oddsportal.com/soccer/australia/a-league/results/)
+DEBUG: Crawled (200) <GET http://fb.oddsportal.com/ajax-sport-country-tournament-archive/1/bwk8H1fC/X0/1/5.5/1/?_=150107253034> (referer: http://www.oddsportal.com/soccer/zimbabwe/premier-soccer-league/results/)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/world/cee-cup/results/> (referer: http://www.oddsportal.com/soccer/africa/cosafa-cup/results/)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/zimbabwe/premier-soccer-league/chicken-inn-bantu-rovers-dQhRzZMg/inplay-odds/> (referer: http://fb.oddsportal.com/ajax-sport-country-tournament-archive/1/bwk8H1fC/X0/1/5.5/1/?_=150107253034)
+DEBUG: Crawled (200) <GET http://fb.oddsportal.com/ajax-sport-country-tournament-archive/1/pGU2S38F/X0/1/5.5/1/?_=15010725507041> (referer: http://www.oddsportal.com/soccer/world/cee-cup/results/)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/world/international-champions-cup/results/> (referer: http://www.oddsportal.com/soccer/africa/cosafa-cup/results/)
+INFO: Crawled 11 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/world/arab-club-championship/results/> (referer: http://www.oddsportal.com/soccer/africa/cosafa-cup/results/)
+DEBUG: Crawled (200) <GET http://fb.oddsportal.com/ajax-sport-country-tournament-archive/1/S6riYAOT/X0/1/5.5/1/?_=15010725723202> (referer: http://www.oddsportal.com/soccer/world/international-champions-cup/results/)
+DEBUG: Crawled (200) <GET http://fb.oddsportal.com/ajax-sport-country-tournament-archive/1/K0RxgABj/X0/1/5.5/1/?_=15010725790255> (referer: http://www.oddsportal.com/soccer/world/arab-club-championship/results/)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/world/club-friendly/results/> (referer: http://www.oddsportal.com/soccer/africa/cosafa-cup/results/)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/world/world-cup-2018/results/> (referer: http://www.oddsportal.com/soccer/africa/cosafa-cup/results/)
+DEBUG: Crawled (200) <GET http://fb.oddsportal.com/ajax-sport-country-tournament-archive/1/n5AQaY3A/X0/1/5.5/1/?_=1501072605742> (referer: http://www.oddsportal.com/soccer/world/club-friendly/results/)
+DEBUG: Crawled (200) <GET http://fb.oddsportal.com/ajax-sport-country-tournament-archive/1/fFsiH75r/X0/1/5.5/1/?_=15010726067711> (referer: http://www.oddsportal.com/soccer/world/world-cup-2018/results/)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/world/club-friendly/rakosmenti-ksk-iii-keruleti-tue-upe-G4KStP1C/> (referer: http://fb.oddsportal.com/ajax-sport-country-tournament-archive/1/n5AQaY3A/X0/1/5.5/1/?_=1501072605742)
+DEBUG: Crawled (200) <GET http://www.oddsportal.com/soccer/world/club-friendly/adelaide-utd-white-city-b5RFLun8/> (referer: http://fb.oddsportal.com/ajax-sport-country-tournament-archive/1/n5AQaY3A/X0/1/5.5/1/?_=1501072605742)
+INFO: Received SIGINT, shutting down gracefully. Send again to force 
+INFO: Closing spider (shutdown)
+INFO: Received SIGINT twice, forcing unclean shutdown
+INFO: Crawled 20 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
